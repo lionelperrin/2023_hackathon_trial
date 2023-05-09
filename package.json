@@ -1,32 +1,23 @@
 {
+  "name": "2023_hackathon_trial",
+  "version": "0.1.0",
   "private": true,
-  "description": "An example project for NextAuth.js with Next.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "https://next-auth-example.vercel.app",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>"
-  ],
   "dependencies": {
-    "next": "latest",
-    "next-auth": "latest",
-    "nodemailer": "^6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^17",
-    "@types/react": "^18.0.37",
-    "typescript": "^4"
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.5",
+    "@types/react-dom": "18.2.3",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.4.0",
+    "next": "13.4.0",
+    "next-auth": "4.22.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4"
   }
 }
