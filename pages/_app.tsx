@@ -1,8 +1,9 @@
 import { SessionProvider } from "next-auth/react"
-import "./styles.css"
-
-import type { AppProps } from "next/app"
+import { MantineProvider } from '@mantine/core';
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
 import type { Session } from "next-auth"
+
 
 // Use of the <SessionProvider> is mandatory to allow components that call
 // `useSession()` anywhere in your application to access the `session` object.
@@ -12,7 +13,9 @@ export default function App({
 }: AppProps<{ session: Session }>) {
   return (
     <SessionProvider session={session}>
+      <MantineProvider withGlobalStyles withNormalizeCSS>
       <Component {...pageProps} />
+      </MantineProvider>
     </SessionProvider>
   )
 }

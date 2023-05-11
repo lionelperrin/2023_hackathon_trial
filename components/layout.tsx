@@ -1,13 +1,13 @@
-import Header from "./header"
-import Footer from "./footer"
+import Top from "./top"
+import Bottom from "./bottom"
 import type { ReactNode } from "react"
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header />
+      <Top />
       <main>{children}</main>
-      <Footer />
+      <Bottom />
     </>
   )
 }
